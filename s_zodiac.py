@@ -12,7 +12,7 @@ class Zodiac():
         self.element = self.switchElement(sign)
         self.svg = 'assets/svg/zodiac/' + sign + '.svg'
         # self.asc = asc
-        position = Position(asc=asc)
+        position = Position(asc)
         self.idByAsc = position.switchAsc(id)
         self.posCircle360 = position.positionCricle360(id)
 
