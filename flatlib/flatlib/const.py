@@ -66,6 +66,19 @@ CAPRICORN = 'Capricorne'
 AQUARIUS = 'Verseau'
 PISCES = 'Poisson'
 
+ID_ARIES = 1
+ID_TAURUS = 2
+ID_GEMINI = 3
+ID_CANCER = 4
+ID_LEO = 5
+ID_VIRGO = 6
+ID_LIBRA = 7
+ID_SCORPIO = 8
+ID_SAGITTARIUS = 9
+ID_CAPRICORN = 10
+ID_AQUARIUS = 11
+ID_PISCES = 12
+
 # Sign modes
 CARDINAL = 'Cardinal'
 FIXED = 'Fixe'
