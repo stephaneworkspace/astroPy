@@ -13,7 +13,7 @@
 import sys
 from datetime import datetime
 from flatlib import aspects
-from flatlib import const # https://github.com/flatangle/flatlib/blob/master/flatlib/const.py
+from flatlib import const
 from flatlib.chart import Chart
 from flatlib.datetime import Datetime
 from flatlib.geopos import GeoPos
