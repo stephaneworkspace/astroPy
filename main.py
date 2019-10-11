@@ -1,17 +1,18 @@
 #!/usr/bin/env python
+"""
+    Author: João Ventura <flatangleweb@gmail.com> -> Flat lib 
+              -> https://buildmedia.readthedocs.org/media/pdf/flatlib/latest/flatlib.pdf
+            Brandon Craig Rhodes 
+              -> https://rhodesmill.org/pyephem/
+            Dieter Koch and Dr. Alois Treindl 
+              -> https://www.astro.com/swisseph/swephinfo_e.htm
+    
+    GNU public licence version 2 or later
+"""
 import sys
 import time
 from datetime import datetime
 import flatlib 
-"""
-    Author: João Ventura <flatangleweb@gmail.com>
-    
-    This recipe shows sample code for handling 
-    aspects.
-
-    https://buildmedia.readthedocs.org/media/pdf/flatlib/latest/flatlib.pdf
-"""
-
 from flatlib import aspects
 from flatlib import const # https://github.com/flatangle/flatlib/blob/master/flatlib/const.py
 from flatlib.chart import Chart
