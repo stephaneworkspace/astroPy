@@ -148,7 +148,7 @@ HOUSE6 = 'Maison6'
 HOUSE7 = 'Maison7'
 HOUSE8 = 'Maison8'
 HOUSE9 = 'Maison9'
-HOUSE10 = 'Maison0'
+HOUSE10 = 'Maison10'
 HOUSE11 = 'Maison11'
 HOUSE12 = 'Maison12'
 
