@@ -9,8 +9,8 @@ from s_zodiac import Zodiac
 class Export:
     def __init__(self, angles, houses):
         self.angles = angles
-        self.zodiac = self.setZodiac(angles[0]) # angles[0] = Ascendant
         self.houses = houses
+        self.zodiac = self.setZodiac(angles[0]) # angles[0] = Ascendant
     
     def setZodiac(self, asc):
         zodiacById = []

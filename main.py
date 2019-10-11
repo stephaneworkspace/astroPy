@@ -28,7 +28,7 @@ umt = sys.argv[3]
 
 # Build a chart for a date and location
 date = Datetime(date_str, hour_min, umt)
-pos = GeoPos('38n32', '8w54')
+pos = GeoPos('46n12', '6e9')
 # pos = GeoPos(-71.13, 42.27)
 
 chart = Chart(date, pos, hsys=const.HOUSES_PLACIDUS) #Page 25, livre: Cours complet d'astrologie

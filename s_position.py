@@ -6,7 +6,8 @@ class Position():
         self.asc = asc
 
     def positionCricle360(self, id):
-        return ((self.switchAsc(id=id) - 1) * 30.0) - self.asc.signlon
+        pos = ((self.switchAsc(id=id) - 1) * 30.0) - self.asc.signlon
+        return pos if pos >= 0 else 360.0 + pos
 
     def switchAsc(self, id):
         """ Switch case for give a number bettween 1 - 12 by ascendant """
