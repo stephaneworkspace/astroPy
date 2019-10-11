@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
-    Author: João Ventura <flatangleweb@gmail.com> -> Flat lib 
+    Author: Stéphane Bressani
+            João Ventura <flatangleweb@gmail.com> -> Flat lib 
               -> https://buildmedia.readthedocs.org/media/pdf/flatlib/latest/flatlib.pdf
             Brandon Craig Rhodes 
               -> https://rhodesmill.org/pyephem/
