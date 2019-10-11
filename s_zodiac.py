@@ -1,7 +1,7 @@
 from flatlib import const
 
 class Zodiac:
-    def __init__(self, id, sign):
+    def __init__(self, id, sign, asc):
         self.id = id
         self.sign = sign
         self.symbol = self.switchSymbol(sign)

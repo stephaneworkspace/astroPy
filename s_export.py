@@ -27,18 +27,18 @@ class Export:
     
     def setZodiac(self, asc):
         zodiacById = []
-        zodiacById.append(Zodiac(ID_ARIES, const.ARIES))
-        zodiacById.append(Zodiac(ID_TAURUS, const.TAURUS))
-        zodiacById.append(Zodiac(ID_GEMINI, const.GEMINI))
-        zodiacById.append(Zodiac(ID_CANCER, const.CANCER))
-        zodiacById.append(Zodiac(ID_LEO, const.LEO))
-        zodiacById.append(Zodiac(ID_VIRGO, const.VIRGO))
-        zodiacById.append(Zodiac(ID_LIBRA, const.LIBRA))
-        zodiacById.append(Zodiac(ID_SCORPIO, const.SCORPIO))
-        zodiacById.append(Zodiac(ID_SAGITTARIUS, const.SAGITTARIUS))
-        zodiacById.append(Zodiac(ID_CAPRICORN, const.CAPRICORN))
-        zodiacById.append(Zodiac(ID_AQUARIUS, const.AQUARIUS))
-        zodiacById.append(Zodiac(ID_PISCES, const.PISCES))
+        zodiacById.append(Zodiac(id=ID_ARIES, sign=const.ARIES, asc=asc))
+        zodiacById.append(Zodiac(id=ID_TAURUS, sign=const.TAURUS, asc=asc))
+        zodiacById.append(Zodiac(id=ID_GEMINI, sign=const.GEMINI, asc=asc))
+        zodiacById.append(Zodiac(id=ID_CANCER, sign=const.CANCER, asc=asc))
+        zodiacById.append(Zodiac(id=ID_LEO, sign=const.LEO, asc=asc))
+        zodiacById.append(Zodiac(id=ID_VIRGO, sign=const.VIRGO, asc=asc))
+        zodiacById.append(Zodiac(id=ID_LIBRA, sign=const.LIBRA, asc=asc))
+        zodiacById.append(Zodiac(id=ID_SCORPIO, sign=const.SCORPIO, asc=asc))
+        zodiacById.append(Zodiac(id=ID_SAGITTARIUS, sign=const.SAGITTARIUS, asc=asc))
+        zodiacById.append(Zodiac(id=ID_CAPRICORN, sign=const.CAPRICORN, asc=asc))
+        zodiacById.append(Zodiac(id=ID_AQUARIUS, sign=const.AQUARIUS, asc=asc))
+        zodiacById.append(Zodiac(id=ID_PISCES, sign=const.PISCES, asc=asc))
         return zodiacById
 
     # def get_house(self):
