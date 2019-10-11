@@ -1,14 +1,14 @@
 from flatlib import const
 
 class Zodiac:
-    def __init__(self, id, nom):
+    def __init__(self, id, sign):
         self.id = id
-        self.nom = nom
-        self.symbol = self.switchSymbol(nom)
-        self.element = self.switchElement(nom)
-        self.svg = 'assets/svg/zodiac/' + nom + '.svg'
+        self.sign = sign
+        self.symbol = self.switchSymbol(sign)
+        self.element = self.switchElement(sign)
+        self.svg = 'assets/svg/zodiac/' + sign + '.svg'
 
-    def switchSymbol(self, nom):
+    def switchSymbol(self, sign):
         switcher = {
             const.ARIES: '♈',
             const.TAURUS: '♉',
@@ -23,9 +23,9 @@ class Zodiac:
             const.AQUARIUS: '♒',
             const.PISCES: '♑'
         }
-        return switcher.get(nom, '?')
+        return switcher.get(sign, '?')
     
-    def switchElement(self, nom):
+    def switchElement(self, sign):
         switcher = {
             const.ARIES: 'Feu',
             const.TAURUS: 'Terre',
@@ -40,4 +40,4 @@ class Zodiac:
             const.AQUARIUS: 'Air',
             const.PISCES: 'Eau'
         }
-        return switcher.get(nom, '?')
+        return switcher.get(sign, '?')
