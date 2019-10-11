@@ -26,6 +26,7 @@ class Export:
         zodiacById.append(Zodiac(id=const.ID_CAPRICORN, sign=const.CAPRICORN, asc=asc))
         zodiacById.append(Zodiac(id=const.ID_AQUARIUS, sign=const.AQUARIUS, asc=asc))
         zodiacById.append(Zodiac(id=const.ID_PISCES, sign=const.PISCES, asc=asc))
+        zodiacById.sort(key=lambda x: x.idByAsc)
         return zodiacById
 
     # def get_house(self):

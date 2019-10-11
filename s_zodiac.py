@@ -1,6 +1,6 @@
 from flatlib import const
 
-class Zodiac:
+class Zodiac():
     """ This class represents the zodiac """
 
     def __init__(self, id, sign, asc):
@@ -13,6 +13,7 @@ class Zodiac:
         # self.asc = asc
         self.idByAsc = self.switchAsc(ascSign=asc.sign, id=id)
         self.posCircle360 = ((self.switchAsc(ascSign=asc.sign, id=id) - 1) * 30.0) - asc.signlon
+
 
     def switchAsc(self, ascSign, id):
         """ Switch case for give a number bettween 1 - 12 by ascendant """
