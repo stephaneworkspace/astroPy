@@ -8,15 +8,15 @@ class Zodiac():
         """ Creates an zodiac class """
         self.id = id
         self.sign = sign
-        self.symbol = self.switchSymbol(sign)
-        self.element = self.switchElement(sign)
+        self.symbol = self.switch_symbol(sign)
+        self.element = self.switch_element(sign)
         self.svg = 'assets/svg/zodiac/' + sign + '.svg'
         # self.asc = asc
         position = Position(asc)
-        self.idByAsc = position.switchAsc(id)
-        self.posCircle360 = position.positionCricle360(id)
+        self.idByAsc = position.switch_asc(id)
+        self.posCircle360 = position.position_cricle_360(id)
 
-    def switchSymbol(self, sign):
+    def switch_symbol(self, sign):
         """ Font icon of the sign """
         switcher = {
             const.ARIES: '♈',
@@ -34,7 +34,7 @@ class Zodiac():
         }
         return switcher.get(sign, '?')
     
-    def switchElement(self, sign):
+    def switch_element(self, sign):
         """ Element of zodiac """
         switcher = {
             const.ARIES: 'Feu',

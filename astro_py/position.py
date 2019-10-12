@@ -5,29 +5,29 @@ class Position():
     def __init__(self, asc):
         self.asc = asc
 
-    def positionCricle360(self, id):
-        pos = ((self.switchAsc(id=id) - 1) * 30.0) - self.asc.signlon
+    def position_cricle_360(self, id):
+        pos = ((self.switch_asc(id=id) - 1) * 30.0) - self.asc.signlon
         return pos if pos >= 0 else 360.0 + pos
 
-    def switchAsc(self, id):
+    def switch_asc(self, id):
         """ Switch case for give a number bettween 1 - 12 by ascendant """
         switcher = {
             const.ARIES: id,
-            const.TAURUS: self.switchAscTaurus(id),
-            const.GEMINI: self.switchAscGemini(id),
-            const.CANCER: self.switchAscCancer(id),
-            const.LEO: self.switchAscLeo(id),
-            const.VIRGO: self.switchAscVirgo(id),
-            const.LIBRA: self.switchAscLibra(id),
-            const.SCORPIO: self.switchAscScorpio(id),
-            const.SAGITTARIUS: self.switchAscSagittarius(id),
-            const.CAPRICORN: self.switchAscCapricorn(id),
-            const.AQUARIUS: self.switchAscAquarius(id),
-            const.PISCES: self.switchAscPisces(id),
+            const.TAURUS: self.switch_asc_taurus(id),
+            const.GEMINI: self.switch_asc_gemini(id),
+            const.CANCER: self.switch_asc_cancer(id),
+            const.LEO: self.switch_asc_leo(id),
+            const.VIRGO: self.switch_asc_virgo(id),
+            const.LIBRA: self.switch_asc_libra(id),
+            const.SCORPIO: self.switch_asc_scorpio(id),
+            const.SAGITTARIUS: self.switch_asc_sagittarius(id),
+            const.CAPRICORN: self.switch_asc_capricorn(id),
+            const.AQUARIUS: self.switch_asc_aquarius(id),
+            const.PISCES: self.switch_asc_pisces(id),
         }
         return switcher.get(self.asc.sign, '?')
 
-    def switchAscTaurus(self, id):
+    def switch_asc_taurus(self, id):
         switcher = {
             const.ID_TAURUS: 1,
             const.ID_GEMINI: 2,
@@ -45,7 +45,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscGemini(self, id):
+    def switch_asc_gemini(self, id):
         switcher = {
             const.ID_GEMINI: 1,
             const.ID_CANCER: 2,
@@ -63,7 +63,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscCancer(self, id):
+    def switch_asc_cancer(self, id):
         switcher = {
             const.ID_CANCER: 1,
             const.ID_LEO: 2,
@@ -80,7 +80,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscLeo(self, id):
+    def switch_asc_leo(self, id):
         switcher = {
             const.ID_LEO: 1,
             const.ID_VIRGO: 2,
@@ -97,7 +97,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscVirgo(self, id):
+    def switch_asc_virgo(self, id):
         switcher = {
             const.ID_VIRGO: 1,
             const.ID_LIBRA: 2,
@@ -114,7 +114,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscLibra(self, id):
+    def switch_asc_libra(self, id):
         switcher = {
             const.ID_LIBRA: 1,
             const.ID_SCORPIO: 2,
@@ -131,7 +131,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscScorpio(self, id):
+    def switch_asc_scorpio(self, id):
         switcher = {
             const.ID_SCORPIO: 1,
             const.ID_SAGITTARIUS: 2,
@@ -148,7 +148,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscSagittarius(self, id):
+    def switch_asc_sagittarius(self, id):
         switcher = {
             const.ID_SAGITTARIUS: 1,
             const.ID_CAPRICORN: 2,
@@ -165,7 +165,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscCapricorn(self, id):
+    def switch_asc_capricorn(self, id):
         switcher = {
             const.ID_CAPRICORN: 1,
             const.ID_AQUARIUS: 2,
@@ -182,7 +182,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscAquarius(self, id):
+    def switch_asc_aquarius(self, id):
         switcher = {
             const.ID_AQUARIUS: 1,
             const.ID_PISCES: 2,
@@ -200,7 +200,7 @@ class Position():
         }
         return switcher.get(id, '?')
 
-    def switchAscPisces(self, id):
+    def switch_asc_pisces(self, id):
         switcher = {
             const.ID_PISCES: 1,
             const.ID_ARIES: 1 + 1,
