@@ -6,7 +6,6 @@ class position():
         self.asc = asc
         
     def position_circle_360_house(self, id, sign_pos):
-        print('self ' +  str(self.position_circle_360_zodiac(id)))
         pos = self.position_circle_360_zodiac(id) + float(sign_pos)
         if pos >= 0:
             pos = pos
