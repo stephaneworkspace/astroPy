@@ -10,8 +10,6 @@ class house():
         self.sign = house.sign
         self.sign_pos = str(my_timedelta(0, house.signlon * 3600))
         # self.signlon = house.signlon
-        
-        
         pos = position(asc)
         id_by_asc = pos.switch_current_sign_to_id(house.sign)
         self.pos_circle_360 = pos.position_circle_360_house(id_by_asc, house.signlon)

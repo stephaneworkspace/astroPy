@@ -61,16 +61,7 @@ h = export(angles=angles, houses=houses)
 # h.get_house()
 print(h.to_json())
 
-print(chart.get(const.HOUSE1).signlon)
-print(chart.getHouse(const.HOUSE1))
 
-#td = MyTimeDelta(0, 29.5 * 3600)
-td = my_timedelta(0, chart.get(const.HOUSE1).signlon * 3600)
-print(str(td))
-print(chart.getHouse(const.HOUSE1).signlon)
-print(chart.getHouse(const.HOUSE1).id)
-print(chart.getHouse(const.HOUSE1).sign)
-print(chart.getHouse(const.HOUSE1).size)
 
 """
 # Retrieve the Sun and Moon 
