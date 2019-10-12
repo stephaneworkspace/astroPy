@@ -3,6 +3,7 @@ Warning if you have flatlib installed, this script setup a modified version of f
 ````
 su your_user_name
 chmod a+x setup.sh
+chmod a+x exemple_run.sh
 ./setup.sh
 ````
 Edit exemple_run.sh then
