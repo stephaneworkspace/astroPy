@@ -3,3 +3,6 @@ __pycache__
 astro_py/__pycache__
 astro_py/component/__pycache__
 astro_py/tool/__pycache__
+astro_py.egg-info
+build
+dist

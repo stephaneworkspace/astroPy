@@ -2,7 +2,7 @@ from flatlib import const
 from astro_py.position import position
 from astro_py.component.my_timedelta import my_timedelta
 
-class house():
+class house:
     def __init__(self, house, asc):
         #self._house = house
         self.id = self.switch_house(house_id=house.id)

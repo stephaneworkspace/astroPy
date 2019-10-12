@@ -2,7 +2,7 @@ from flatlib import const
 from astro_py.position import position
 from astro_py.component.my_timedelta import my_timedelta
 
-class planet():
+class planet:
     def __init__(self, planet, asc):
         # self._planet = planet
         self.id = planet.id

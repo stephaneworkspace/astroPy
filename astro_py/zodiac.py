@@ -1,7 +1,7 @@
 from flatlib import const
 from astro_py.position import position
 
-class zodiac():
+class zodiac:
     """ This class represents the zodiac """
 
     def __init__(self, id, sign, asc):

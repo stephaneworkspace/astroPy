@@ -2,7 +2,7 @@ from flatlib import const
 from astro_py.position import position
 from astro_py.component.my_timedelta import my_timedelta
 
-class angle():
+class angle:
     def __init__(self, angle, asc):
         # self._angle = angle
         self.id = angle.id

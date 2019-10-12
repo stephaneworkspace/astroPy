@@ -1,6 +1,6 @@
 from flatlib import const
 
-class position():
+class position:
     """ This class is a tool for positioning over circle 360 """
     def __init__(self, asc):
         self.asc = asc
