@@ -4,7 +4,7 @@
 
 import json
 from flatlib import const
-from s_zodiac import Zodiac
+from astro_py.zodiac import Zodiac
 
 class Export:
     def __init__(self, angles, houses):

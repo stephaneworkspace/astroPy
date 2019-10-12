@@ -18,8 +18,8 @@ from flatlib.chart import Chart
 from flatlib.datetime import Datetime
 from flatlib.geopos import GeoPos
 from flatlib.protocols import behavior
-from s_export import Export
-from c_mytimedelta import MyTimeDelta
+from astro_py.export import Export
+from astro_py.component.mytimedelta import MyTimeDelta
 
 # print(sys.argv)
 dateYYYMMDD = dt.strptime(sys.argv[1], '%Y-%m-%d')

@@ -1,2 +1,4 @@
 run.sh
 __pycache__
+astro_py/__pycache__
+astro_py/component/__pycache__
