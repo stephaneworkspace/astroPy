@@ -5,7 +5,7 @@ from astro_py.component.my_timedelta import my_timedelta
 class angle():
     def __init__(self, angle, asc):
         # self._angle = angle
-        self.name = angle.id
+        self.id = angle.id
         # self.id_house = house.id
         self.sign = angle.sign
         self.sign_pos = str(my_timedelta(0, angle.signlon * 3600))
