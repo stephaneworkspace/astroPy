@@ -18,8 +18,8 @@ from flatlib.chart import Chart
 from flatlib.datetime import Datetime
 from flatlib.geopos import GeoPos
 from flatlib.protocols import behavior
-from astro_py.export import Export
-from astro_py.component.mytimedelta import MyTimeDelta
+from astro_py.export import export
+from astro_py.component.my_timedelta import my_timedelta
 
 # print(sys.argv)
 dateYYYMMDD = dt.strptime(sys.argv[1], '%Y-%m-%d')
@@ -57,7 +57,7 @@ houses.append(chart.get(const.HOUSE11))
 houses.append(chart.get(const.HOUSE12))
 print(houses[1 - 1])
 
-h = Export(angles=angles, houses=houses)
+h = export(angles=angles, houses=houses)
 # h.get_house()
 print(h.to_json())
 
@@ -65,7 +65,7 @@ print(chart.get(const.HOUSE1).signlon)
 print(chart.getHouse(const.HOUSE1))
 
 #td = MyTimeDelta(0, 29.5 * 3600)
-td = MyTimeDelta(0, chart.get(const.HOUSE1).signlon * 3600)
+td = my_timedelta(0, chart.get(const.HOUSE1).signlon * 3600)
 print(str(td))
 print(chart.getHouse(const.HOUSE1).signlon)
 print(chart.getHouse(const.HOUSE1).id)

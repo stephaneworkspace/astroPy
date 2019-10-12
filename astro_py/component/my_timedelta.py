@@ -1,7 +1,7 @@
 from datetime import timedelta
 import numpy as np
 
-class MyTimeDelta(timedelta):
+class my_timedelta(timedelta):
     def __str__(self):
         """ Return ° in sign value """
         sec = self.seconds

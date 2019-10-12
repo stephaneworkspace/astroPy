@@ -1,7 +1,7 @@
 from flatlib import const
-from astro_py.position import Position
+from astro_py.position import position
 
-class Zodiac():
+class zodiac():
     """ This class represents the zodiac """
 
     def __init__(self, id, sign, asc):
@@ -12,9 +12,9 @@ class Zodiac():
         self.element = self.switch_element(sign)
         self.svg = 'assets/svg/zodiac/' + sign + '.svg'
         # self.asc = asc
-        position = Position(asc)
-        self.idByAsc = position.switch_asc(id)
-        self.posCircle360 = position.position_cricle_360(id)
+        pos = position(asc)
+        self.id_by_asc = pos.switch_asc(id)
+        self.pos_circle_360 = pos.position_cricle_360(id)
 
     def switch_symbol(self, sign):
         """ Font icon of the sign """
