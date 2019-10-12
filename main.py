@@ -32,14 +32,14 @@ date = Datetime(date_str, hour_min, umt)
 pos = GeoPos('46n12', '6e9')
 # pos = GeoPos(-71.13, 42.27)
 
-chart = Chart(date, pos, hsys=const.HOUSES_PLACIDUS) #Page 25, livre: Cours complet d'astrologie
-
+chart = Chart(date, pos, hsys=const.HOUSES_PLACIDUS, IDs=const.LIST_OBJECTS) #Page 25, livre: Cours complet d'astrologie
 # Prepare angles
 angles = []
 angles.append(chart.get(const.ASC))
+angles.append(chart.get(const.IC))
 angles.append(chart.get(const.DESC))
 angles.append(chart.get(const.MC))
-angles.append(chart.get(const.IC))
+
 
 # Prepare houses
 houses = []
@@ -55,11 +55,27 @@ houses.append(chart.get(const.HOUSE9))
 houses.append(chart.get(const.HOUSE10))
 houses.append(chart.get(const.HOUSE11))
 houses.append(chart.get(const.HOUSE12))
-print(houses[1 - 1])
 
-h = export(angles=angles, houses=houses)
-# h.get_house()
-print(h.to_json())
+planets = []
+planets.append(chart.get(const.SUN))
+planets.append(chart.get(const.MOON))
+planets.append(chart.get(const.MERCURY))
+planets.append(chart.get(const.VENUS))
+planets.append(chart.get(const.MARS))
+planets.append(chart.get(const.JUPITER))
+planets.append(chart.get(const.SATURN))
+planets.append(chart.get(const.URANUS))
+planets.append(chart.get(const.NEPTUNE))
+planets.append(chart.get(const.PLUTO))
+planets.append(chart.get(const.NEPTUNE))
+planets.append(chart.get(const.CHIRON))
+planets.append(chart.get(const.NORTH_NODE))
+planets.append(chart.get(const.SOUTH_NODE))
+planets.append(chart.get(const.PARS_FORTUNA))
+
+e = export(angles=angles, houses=houses, planets=planets)
+print(e.to_json())
+
 
 
 

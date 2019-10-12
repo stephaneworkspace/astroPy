@@ -10,16 +10,16 @@ from astro_py.zodiac import zodiac
 
 
 class export:
-    def __init__(self, angles, houses):
+    def __init__(self, angles, houses, planets):
         self.angles = self.set_angle(angles)
         self.houses = self.set_house(houses, angles[0])  # angles[0] = Ascendant
         self.zodiac = self.set_zodiac(angles[0]) # angles[0] = Ascendant
+        self.planets = planets
     
     def set_angle(self, angles):
         angle_array = []
         for i in angles:
             angle_array.append(angle(angle=i, asc=angles[0])) # angles[0] = Ascendant
-        angle_array.sort(key=lambda x: x.id)
         return angle_array
     
     def set_house(self, houses, asc):
