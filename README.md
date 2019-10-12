@@ -1,4 +1,6 @@
-# astroPy
+# astro_py
+By Stéphane Bressani
+# Installation
 Warning if you have flatlib installed, this script setup a modified version of flatlib
 ````
 su your_user_name
