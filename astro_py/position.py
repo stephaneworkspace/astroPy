@@ -4,10 +4,45 @@ class position():
     """ This class is a tool for positioning over circle 360 """
     def __init__(self, asc):
         self.asc = asc
+        
+    def position_circle_360_house(self, id, sign_pos):
+        print('self ' +  str(self.position_circle_360_zodiac(id)))
+        pos = self.position_circle_360_zodiac(id) + float(sign_pos)
+        if pos >= 0:
+            pos = pos
+        else:
+            pos = 360.0 + pos
+        if pos == 360.0:
+            pos = 0.0
+        return pos 
 
-    def position_cricle_360(self, id):
+    def position_circle_360_zodiac(self, id):
         pos = ((self.switch_asc(id=id) - 1) * 30.0) - self.asc.signlon
-        return pos if pos >= 0 else 360.0 + pos
+        if pos >= 0:
+            pos = pos
+        else:
+            pos = 360.0 + pos
+        if pos == 360.0:
+            pos = 0.0
+        return pos 
+    
+    def switch_current_sign_to_id(self, sign):
+        """ For house.py, current sign -> id sign """
+        switcher = {
+            const.ARIES: const.ID_ARIES,
+            const.TAURUS: const.ID_TAURUS,
+            const.GEMINI: const.ID_GEMINI,
+            const.CANCER: const.ID_CANCER,
+            const.LEO: const.ID_LEO,
+            const.VIRGO: const.ID_VIRGO,
+            const.LIBRA: const.ID_LIBRA,
+            const.SCORPIO: const.ID_SCORPIO,
+            const.SAGITTARIUS: const.ID_SAGITTARIUS,
+            const.CAPRICORN: const.ID_CAPRICORN,
+            const.AQUARIUS: const.ID_AQUARIUS,
+            const.PISCES: const.ID_PISCES,
+        }
+        return switcher.get(sign, '?')
 
     def switch_asc(self, id):
         """ Switch case for give a number bettween 1 - 12 by ascendant """

@@ -14,7 +14,7 @@ class zodiac():
         # self.asc = asc
         pos = position(asc)
         self.id_by_asc = pos.switch_asc(id)
-        self.pos_circle_360 = pos.position_cricle_360(id)
+        self.pos_circle_360 = pos.position_circle_360_zodiac(id)
 
     def switch_symbol(self, sign):
         """ Font icon of the sign """
