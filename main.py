@@ -18,7 +18,6 @@ from flatlib.chart import Chart
 from flatlib.datetime import Datetime
 from flatlib.geopos import GeoPos
 from flatlib.protocols import behavior
-import numpy as np
 from s_export import Export
 from c_mytimedelta import MyTimeDelta
 
@@ -64,42 +63,12 @@ print(h.toJSON())
 
 print(chart.get(const.HOUSE1).signlon)
 print(chart.getHouse(const.HOUSE1))
-"""
-td = MyTimeDelta(timedelta(0, 29.5))
+
+#td = MyTimeDelta(0, 29.5 * 3600)
+td = MyTimeDelta(0, chart.get(const.HOUSE1).signlon * 3600)
 print(str(td))
-"""
-delta = timedelta(0, chart.get(const.HOUSE1).signlon * 3600)
-#delta = timedelta(0, 29.5 * 3600)
-sec = delta.seconds
-# total_sec = delta.total_seconds
-hours = sec // 3600
-minutes = (sec // 60) - (hours * 60)
-secondes = sec - (minutes * 60) - ((hours * 60) * 60)
 
 
-days = int(delta.days)
-d = delta / np.timedelta64(1, 'D').astype(int)
-print(str(d.days) + '-')
-
-stringDays = int(d.days)
-calc = int(hours + (int(d.days) * 24))
-print(calc)
-print(type(calc))
-
-
-string = "{}°{}'{}''".format(calc, str(minutes).zfill(2), str(secondes).zfill(2))
-print(string)
-
-
-# print(str(delta))
-
-"""
-hours, rest = time.split(':', 1)
-time = dt.timedelta(hours=int(hours)) + dt.datetime.strptime(rest, "%M:%S.%f")
-print(time)
-"""
-
-print(chart.get(const.HOUSE1).signlon)
 
 """
 # Retrieve the Sun and Moon 
