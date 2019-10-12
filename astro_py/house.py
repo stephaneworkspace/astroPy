@@ -12,7 +12,7 @@ class house():
         # self.signlon = house.signlon
         pos = position(asc)
         id_by_asc = pos.switch_current_sign_to_id(house.sign)
-        self.pos_circle_360 = pos.position_circle_360_house(id_by_asc, house.signlon)
+        self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, house.signlon)
 
     def switch_house(self, house_id):
         """ Switch case for give the id of house """
@@ -31,11 +31,3 @@ class house():
             const.HOUSE12: 12,
         }
         return switcher.get(house_id, '?')
- 
-        
-    """
-    print(chart.getHouse(const.HOUSE1).signlon)
-    print(chart.getHouse(const.HOUSE1).id)
-    print(chart.getHouse(const.HOUSE1).sign)
-    print(chart.getHouse(const.HOUSE1).size)
-    """

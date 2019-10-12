@@ -5,7 +5,8 @@ class position():
     def __init__(self, asc):
         self.asc = asc
         
-    def position_circle_360_house(self, id, sign_pos):
+    def position_circle_360_object(self, id, sign_pos):
+        """ House, aspect, planet """
         pos = self.position_circle_360_zodiac(id) + float(sign_pos)
         if pos >= 0:
             pos = pos
