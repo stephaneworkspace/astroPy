@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-    Author: Stéphane Bressani
+    Author: Stéphane Bressani <s.bressani@bluewin.ch> -> Astro py
             João Ventura <flatangleweb@gmail.com> -> Flat lib 
               -> https://buildmedia.readthedocs.org/media/pdf/flatlib/latest/flatlib.pdf
             Brandon Craig Rhodes 
@@ -22,10 +22,10 @@ from astro_py.export import export
 from astro_py.component.my_timedelta import my_timedelta
 
 class astro_py:
-  def __init__(self, date, hour_min, utc):
+  def __init__(self, date, hour_min, utc, geo_pos_1, geo_pos_2):
     # Build a chart for a date and location
     date = Datetime(date, hour_min, utc)
-    pos = GeoPos('46n12', '6e9') # Geneva, Switzerland
+    pos = GeoPos(geo_pos_1, geo_pos_2)
     chart = Chart(date, pos, hsys=const.HOUSES_PLACIDUS, IDs=const.LIST_OBJECTS) #Page 25, livre: Cours complet d'astrologie
     
     # Prepare angles

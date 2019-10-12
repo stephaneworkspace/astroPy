@@ -1,7 +1,11 @@
 # astroPy
+Warning if you have flatlib installed, this script setup a modified version of flatlib
 ````
-cd flatlib
-python3 setup.py install
-cd ..
-run the script.sh after sudo chmod a+o run.sh (or exemple_run.sh)
+su your_user_name
+chmod a+x setup.sh
+./setup.sh
+````
+Edit exemple_run.sh then
+````
+./exemple_run.sh
 ````
