@@ -222,7 +222,7 @@ class position:
             const.ID_AQUARIUS: 1,
             const.ID_PISCES: 2,
             const.ID_ARIES: 2 + 1,
-            const.ID_TAURUS: 2 + 1,
+            const.ID_TAURUS: 2 + 2,
             const.ID_GEMINI: 2 + 3,
             const.ID_CANCER: 2 + 4,
             const.ID_LEO: 2 + 5,
