@@ -13,4 +13,5 @@ class planet:
         pos = position(asc)
         id_by_asc = pos.switch_current_sign_to_id(planet.sign)
         self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, planet.signlon)
+        self.svg = 'assets/svg/planet/' + planet.id + '.svg'
         

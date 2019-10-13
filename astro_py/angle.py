@@ -13,4 +13,8 @@ class angle:
         pos = position(asc)
         id_by_asc = pos.switch_current_sign_to_id(angle.sign)
         self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, angle.signlon)
+        if (angle.id == 'Asc' or angle.id == 'MC'):
+            self.svg = 'assets/svg/angle/' + angle.id + '.svg'
+        else:
+            self.svg = ''
         
