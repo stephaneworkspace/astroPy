@@ -15,10 +15,10 @@ class angle:
         self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, angle.signlon)
         if (angle.id == 'Asc' or angle.id == 'MC'):
             self.svg = 'assets/svg/angle/' + angle.id + '.svg'
-            self.svgDegre = 'assets/svg/degre_min/' + str(my_timedelta_deg(0, angle.signlon * 3600)) + '.svg'
-            self.svgMin = 'assets/svg/degre_min/' + str(my_timedelta_min(0, angle.signlon * 3600)) + '.svg'
+            self.svg_degre = 'assets/svg/degre_min/' + str(my_timedelta_deg(0, angle.signlon * 3600)) + '.svg'
+            self.svg_min = 'assets/svg/degre_min/' + str(my_timedelta_min(0, angle.signlon * 3600)) + '.svg'
         else:
             self.svg = ''
-            self.svgDegre = ''
-            self.svgMin = ''
+            self.svg_degre = ''
+            self.svg_min = ''
         
