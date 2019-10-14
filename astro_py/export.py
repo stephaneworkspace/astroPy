@@ -8,13 +8,27 @@ from astro_py.angle import angle
 from astro_py.house import house
 from astro_py.zodiac import zodiac
 from astro_py.planet import planet
-
+# python >= 3.6
+sw_astro_text = True
+try:
+    from astro_py_text.astro_py_text import astro_py_text
+except ModuleNotFoundError as err:
+    sw_astro_text = False
+    # print(err)
+    # print("It's just a warning, the repository of astro_py_text is private")
+        
 class export:
     def __init__(self, angles, houses, planets):
         self.angles = self.set_angle(angles)
         self.houses = self.set_house(houses, angles[0])  # angles[0] = Ascendant
         self.zodiac = self.set_zodiac(angles[0]) # angles[0] = Ascendant
         self.planets = self.set_planet(planets, angles[0]) # angles[0] = Ascendant
+        # 
+        if (sw_astro_text):
+            astro_text = astro_py_text('astro_py_text')
+            # print(astro_text.hello_world())
+        # else:
+            #print('Module non chargé')
     
     def set_angle(self, angles):
         angle_array = []
