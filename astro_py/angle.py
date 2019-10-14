@@ -1,6 +1,6 @@
 from flatlib import const
 from astro_py.position import position
-from astro_py.component.my_timedelta import my_timedelta
+from astro_py.component.my_timedelta import my_timedelta, my_timedelta_deg, my_timedelta_min
 
 class angle:
     def __init__(self, angle, asc):
@@ -15,6 +15,10 @@ class angle:
         self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, angle.signlon)
         if (angle.id == 'Asc' or angle.id == 'MC'):
             self.svg = 'assets/svg/angle/' + angle.id + '.svg'
+            self.svgDegre = 'assets/svg/degre_min/' + str(my_timedelta_deg(0, angle.signlon * 3600)) + '.svg'
+            self.svgMin = 'assets/svg/degre_min/' + str(my_timedelta_min(0, angle.signlon * 3600)) + '.svg'
         else:
             self.svg = ''
+            self.svgDegre = ''
+            self.svgMin = ''
         
