@@ -62,7 +62,6 @@ class astro_py:
     planets.append(chart.get(const.URANUS))
     planets.append(chart.get(const.NEPTUNE))
     planets.append(chart.get(const.PLUTO))
-    planets.append(chart.get(const.NEPTUNE))
     planets.append(chart.get(const.CHIRON))
     planets.append(chart.get(const.NORTH_NODE))
     planets.append(chart.get(const.SOUTH_NODE))
