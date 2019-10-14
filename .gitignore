@@ -4,4 +4,8 @@ astro_py/__pycache__
 astro_py/component/__pycache__
 astro_py/tool/__pycache__
 astro_py.egg-info
-build
+build/
+dist/
+flatlib/dist/
+.vscode/
+astro_py_texte

@@ -24,3 +24,7 @@ venv/
 
 # Build
 build/
+
+dist/
+
+flatlib.egg-info/
