@@ -13,7 +13,7 @@ class house:
         pos = position(asc)
         id_by_asc = pos.switch_current_sign_to_id(house.sign)
         self.pos_circle_360 = pos.position_circle_360_object(id_by_asc, house.signlon)
-        self.svg = 'assets/svg/house/' + house.id + '.svg'
+        self.svg = 'assets/svg/house/' + self.id + '.svg'
 
     def switch_house(self, house_id):
         """ Switch case for give the id of house """
