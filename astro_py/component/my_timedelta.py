@@ -36,8 +36,8 @@ def compute(self, swTimeDelta):
     """ Switch case for string output """
     switcher = {
         TIMEDELTA: "{}°{}'{}''".format(calc, str(minutes).zfill(2), str(secondes).zfill(2)),
-        TIMEDELTADEG: "{}°".format(calc),
-        TIMEDELTAMIN: "{}'".format(str(minutes).zfill(2)),
+        TIMEDELTADEG: "degre{}".format(calc),
+        TIMEDELTAMIN: "min{}".format(str(minutes).zfill(2)),
     }
     return switcher.get(swTimeDelta, '?')
 
