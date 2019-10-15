@@ -42,7 +42,7 @@ class zodiac_text:
         }
         return switcher.get(id, '?')
     
-    def text_pictogramme_belier(self):
+    def text_belier(self):
         # Livre KLEA
         if(FileCheck('assets/zodiac_01_belier_klea_definition.dat')):
             f = open('assets/zodiac_01_belier_klea_definition.dat', 'r')
@@ -52,5 +52,5 @@ class zodiac_text:
             content = ''
         return content
         
-    def text_pictogramme_autre(self):
+    def text_autre(self):
         return ''
