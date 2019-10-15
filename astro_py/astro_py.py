@@ -72,8 +72,8 @@ class astro_py:
     """ Export json of all datas """
     return self.data.to_json()
 
-  def helloworld(self):
-      print('Awesome')
+  def helloworld(self, n, p):
+      print('Hello world ' + n + ' ' + p)
 
 
 
