@@ -23,12 +23,9 @@ class export:
         self.houses = self.set_house(houses, angles[0])  # angles[0] = Ascendant
         self.zodiac = self.set_zodiac(angles[0]) # angles[0] = Ascendant
         self.planets = self.set_planet(planets, angles[0]) # angles[0] = Ascendant
-        # 
         if (sw_astro_text):
-            astro_text = astro_py_text('astro_py_text')
-            # print(astro_text.hello_world())
-        # else:
-            #print('Module non chargé')
+            astro_text = astro_py_text(self.zodiac)
+        self.zodiac_text = self.set_zodiac_text(astro_text)
     
     def set_angle(self, angles):
         angle_array = []
@@ -64,6 +61,12 @@ class export:
         for i in planets:
             planet_array.append(planet(planet=i, asc=asc))
         return planet_array
+
+    def set_zodiac_text(self, astro_text):
+        if (sw_astro_text):
+            return astro_text.text_zodiac()
+        else:
+            return None
 
     def to_json(self):
         json_dumps = json.dumps(self, default=lambda o: o.__dict__, 

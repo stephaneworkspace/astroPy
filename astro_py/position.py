@@ -76,7 +76,6 @@ class position:
             const.ID_AQUARIUS: 10,
             const.ID_PISCES: 11,
             const.ID_ARIES: 11 + 1,
-
         }
         return switcher.get(id, '?')
 
