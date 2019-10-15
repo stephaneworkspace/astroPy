@@ -12,7 +12,18 @@ from setuptools import find_packages
 setup(
     # Project
     name = 'astro_py',
-    version = '0.0.12.dev0',
+    version = '0.0.12.dev2',
+    
+    # Sources
+    # packages = ['astro_py'],
+    
+    package_data = {
+        'astro_py': ['assets/*.dat']
+    #     'flatlib': [
+    #         'resources/README.md',
+    #         'resources/swefiles/*'
+    #     ],
+    },
     
     # Sources
     packages = find_packages(),

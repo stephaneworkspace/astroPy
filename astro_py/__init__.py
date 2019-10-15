@@ -6,8 +6,8 @@
 import os
 
 
-__version__ = '0.0.12.dev0'
+__version__ = '0.0.12.dev2'
 
 # Library and resource paths
 PATH_LIB = os.path.dirname(__file__) + os.sep
-# PATH_RES = PATH_LIB + 'resources' + os.sep
+PATH_RES = PATH_LIB + 'assets' + os.sep
