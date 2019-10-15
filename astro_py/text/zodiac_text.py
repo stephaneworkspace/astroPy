@@ -1,6 +1,14 @@
 from astro_py.zodiac import zodiac
 from flatlib import const
 
+def FileCheck(fn):
+    try:
+        open(fn, "r")
+        return 1
+    except IOError:
+        # print("Error: File " + fn + " does not appear to exist. (text are in a private repository)")
+        return 0
+
 class astro_py_text:
     def __init__(self, zodiac): #angles, houses, planets):
         self.zodiac = zodiac
@@ -50,9 +58,12 @@ class zodiac_text:
         return switcher.get(id, '?')
     
     def text_pictogramme_belier(self):
-        f = open('assets/zodiac_01_belier_pictogramme.dat', 'r')
-        content = f.read()
-        f.close()
+        if(FileCheck('assets/zodiac_01_belier_pictogramme.dat')):
+            f = open('assets/zodiac_01_belier_pictogramme.dat', 'r')
+            content = f.read()
+            f.close()
+        else:
+            content = ''
         return zodiac_text_pictograme('Le pictogramme du Bélier', content)
         
     def text_pictogramme_autre(self):

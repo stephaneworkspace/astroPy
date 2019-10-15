@@ -8,7 +8,7 @@ from astro_py.angle import angle
 from astro_py.house import house
 from astro_py.zodiac import zodiac
 from astro_py.planet import planet
-from astro_py.text.house_text import astro_py_text
+from astro_py.text.zodiac_text import astro_py_text
 # python >= 3.6
 sw_astro_text = True
 """
