@@ -12,7 +12,7 @@ from setuptools import find_packages
 setup(
     # Project
     name = 'astro_py',
-    version = '0.0.12.dev2',
+    version = '0.0.12.dev3',
     
     # Sources
     # packages = ['astro_py'],

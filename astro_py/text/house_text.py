@@ -29,7 +29,7 @@ class zodiac_text_pictograme:
 
 class zodiac_text:
     def __init__(self, zodiac):
-        self.pictograme = zodiac_text_pictograme('','')
+        self.sign = zodiac.sign
         self.struct = zodiac_text_struct(self.switch_zodiac_pictogramme(zodiac.id))
         
     def switch_zodiac_pictogramme(self, id):
