@@ -43,13 +43,21 @@ class zodiac_text:
         return switcher.get(id, '?')
     
     def text_belier(self):
+        content = ''
+        # Titre
+        if(FileCheck('assets/zodiac_01_belier.dat')):
+            f = open('assets/zodiac_01_belier.dat', 'r')
+            content += f.read()
+            f.close()
         # Livre KLEA
+        if(FileCheck('assets/zodiac_01_belier_klea.dat')):
+            f = open('assets/zodiac_01_belier_klea.dat', 'r')
+            content += f.read()
+            f.close()
         if(FileCheck('assets/zodiac_01_belier_klea_definition.dat')):
             f = open('assets/zodiac_01_belier_klea_definition.dat', 'r')
-            content = f.read()
+            content += f.read()
             f.close()
-        else:
-            content = ''
         return content
         
     def text_autre(self):
