@@ -19,6 +19,10 @@ class planet:
         self.svg_min = 'assets/svg/degre_min/' + str(my_timedelta_min(0, planet.signlon * 3600)) + '.svg'
         self.movement = planet.movement()
         self.sw_movement_is_retrograde = planet.isRetrograde()
+        # No retrograde in book for node moon
+        if (planet.id == const.NORTH_NODE or planet.id == const.SOUTH_NODE):
+            self.movement = False
+        
         #self.sw_movement_is_direct = planet.isDirect()
         #self.sw_movement_is_stationary = planet.isStationary()
         # self.sw_movement_is_fast = planet.isFast()
