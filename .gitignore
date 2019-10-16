@@ -9,3 +9,4 @@ dist/
 flatlib/dist/
 .vscode/
 assets/
+flatlib.egg-info/

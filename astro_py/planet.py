@@ -1,4 +1,5 @@
 from flatlib import const
+# from flatlib.object import (GenericObject, Object)
 from astro_py.position import position
 from astro_py.component.my_timedelta import my_timedelta, my_timedelta_deg, my_timedelta_min
 
@@ -16,4 +17,8 @@ class planet:
         self.svg = 'assets/svg/planet/' + planet.id + '.svg'
         self.svg_degre = 'assets/svg/degre_min/' + str(my_timedelta_deg(0, planet.signlon * 3600)) + '.svg'
         self.svg_min = 'assets/svg/degre_min/' + str(my_timedelta_min(0, planet.signlon * 3600)) + '.svg'
-        
+        self.movement = planet.movement()
+        self.sw_movement_is_retrograde = planet.isRetrograde()
+        #self.sw_movement_is_direct = planet.isDirect()
+        #self.sw_movement_is_stationary = planet.isStationary()
+        # self.sw_movement_is_fast = planet.isFast()
