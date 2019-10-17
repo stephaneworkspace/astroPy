@@ -11,5 +11,5 @@ utc = sys.argv[3]
 geo_pos_1 = sys.argv[4]
 geo_pos_2 = sys.argv[5]
 
-astro = astropy.astropy(date, hour_min, utc, geo_pos_1, geo_pos_2)
+astro = astropyfr.astropyfr(date, hour_min, utc, geo_pos_1, geo_pos_2)
 print(astro.get_data())

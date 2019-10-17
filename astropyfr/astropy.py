@@ -21,7 +21,7 @@ from flatlibfr.protocols import behavior
 from astropyfr.export import export
 from astropyfr.component.my_timedelta import my_timedelta
 
-class astropy:
+class astropyfr:
   def __init__(self, date, hour_min, utc, geo_pos_1, geo_pos_2):
     # Build a chart for a date and location
     date = Datetime(date, hour_min, utc)
