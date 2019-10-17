@@ -1,4 +1,4 @@
-from astro_py.zodiac import zodiac
+from astropyfr.zodiac import zodiac
 from flatlibfr import const
 
 def FileCheck(fn):
