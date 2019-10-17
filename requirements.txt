@@ -1,1 +1,2 @@
 flatlibfr>=0.0.1.dev4
+numpy>=1.17.2
