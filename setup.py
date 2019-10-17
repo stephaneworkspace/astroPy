@@ -11,14 +11,14 @@ from setuptools import find_packages
 
 setup(
     # Project
-    name = 'astro_py',
-    version = '0.0.12.dev10',
+    name = 'astropyfr',
+    version = '0.0.1.dev1',
     
     # Sources
     # packages = ['astro_py'],
     
     package_data = {
-        'astro_py': ['assets/*.dat']
+        'astropy': ['assets/*.dat']
     #     'flatlib': [
     #         'resources/README.md',
     #         'resources/swefiles/*'
@@ -36,7 +36,7 @@ setup(
     # },
     
     # Dependencies
-    install_requires = ['pyswisseph>=2.00.00-2', 'flatlib>=0.2.2-dev'],
+    install_requires = ['flatlibfr>=0.0.1.dev4'],
     
     # Metadata
     description = 'Python library for Traditional Astrology with export json',

@@ -1,12 +1,11 @@
 run.sh
 __pycache__
-astro_py/__pycache__
-astro_py/component/__pycache__
-astro_py/tool/__pycache__
-astro_py.egg-info
+astropyfr/__pycache__
+astropyfr/component/__pycache__
+astropyfr/tool/__pycache__
 build/
 dist/
 flatlib/dist/
 .vscode/
 assets/
-flatlib.egg-info/
+astropyfr.egg-info/

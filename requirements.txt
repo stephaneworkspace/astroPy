@@ -1,2 +1,1 @@
-pyswisseph>=2.00.00-2
-flatlib>=0.2.3-dev
+flatlibfr>=0.0.1.dev4
