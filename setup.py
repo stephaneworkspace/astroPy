@@ -36,7 +36,7 @@ setup(
     # },
     
     # Dependencies
-    install_requires = ['flatlibfr>=0.0.1.dev6'],
+    install_requires = ['flatlibfr>=0.0.1.dev7'],
     
     # Metadata
     description = 'Python library for Traditional Astrology with export json',

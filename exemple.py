@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 from datetime import datetime as dt, timedelta
-from astropyfr import astropy
+from astropyfr import astropyfr
 
 # print(sys.argv)
 date_yyyy_mm_dd = dt.strptime(sys.argv[1], '%Y-%m-%d')
