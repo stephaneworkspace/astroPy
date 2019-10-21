@@ -238,7 +238,7 @@ class position:
         switcher = {
             const.ID_PISCES: 1,
             const.ID_ARIES: 1 + 1,
-            const.ID_TAURUS: 1 + 1,
+            const.ID_TAURUS: 1 + 2,
             const.ID_GEMINI: 1 + 3,
             const.ID_CANCER: 1 + 4,
             const.ID_LEO: 1 + 5,
