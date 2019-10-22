@@ -21,6 +21,7 @@ class planet:
         self.sw_movement_is_retrograde = planet.isRetrograde()
         # No retrograde in book for node moon
         if (planet.id == const.NORTH_NODE or planet.id == const.SOUTH_NODE):
+            self.movement = ''
             self.sw_movement_is_retrograde = False
         
         #self.sw_movement_is_direct = planet.isDirect()
